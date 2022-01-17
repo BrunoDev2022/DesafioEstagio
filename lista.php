@@ -12,6 +12,7 @@
     <title>pesquisar</title>
   </head>
   <body>
+   
 
    <?php 
 
@@ -29,16 +30,7 @@
 
    $dados = mysqli_query($conn, $sql);/*metodo de conexão*/
 
-  
-
-   
-
-   
-
    ?>
-
-  
-
 
 
       <div class="container">
@@ -81,25 +73,18 @@
     <td>$valor_unitario</td>
     <td>$qtd_estoque</td>
     <td ><a href='http://localhost/DesafioEstagio/estoque_edite.php?id_estoque=$id' class='btn btn-success'>Editar</a>
-    <a href='http://localhost/DesafioEstagio/excluir_estoque.php?id_estoque=$id' class='btn btn-dark'>Excluir</a>
+    <a href='http://localhost/DesafioEstagio/scrip_excluir.php?id_estoque=$id' class='btn btn-dark'>Excluir</a>
     </td>
-    
-
-   
-
-
+ 
     </tr>";
 
    }
   ?>
+  
 
   </tbody>
 </table>    
 
-
-
-
-    
 
     <!-- Optional JavaScript; choose one of the two! -->
 
