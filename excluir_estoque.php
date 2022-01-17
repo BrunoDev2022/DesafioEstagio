@@ -59,7 +59,7 @@
               
 
 </form>
-<input type="submit" class="btn btn-dark"  name="acao" value="Excluir ">
+<input  action="scrip_excluir.php" type="submit" class="btn btn-dark"  name="delete" value="Excluir ">
 <input type="hidden" name="id" value="<?php echo $linha['id_estoque'];?>">
 
               
@@ -93,23 +93,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
     -->
   </body>
-  <?php 
-  /*
-  $pdo = new PDO('mysql:host=localhost;dbname=empresa','root','3211');
-
-  if (isset($_POST['acao'])){
-    $nome_produto =$_POST['nome_produto'];
-    $descricao  = $_POST['descricao'];
-    $valor_unitario =$_POST['valor_unitario'];
-    $qtd_estoque =$_POST['qtd_estoque'];
-    
-    $sql = $pdo->prepare("UPDATE `estoque` VALUES (null,?,?,?,?)");
-
-  $sql->execute(array($nome_produto,$descricao,$valor_unitario,$qtd_estoque));
-  echo 'Produto adicionado';
   
-  }
-*/
-  ?>
   <a href="http://localhost/DesafioEstagio/lista.php/" class="btn btn-">Voltar </a>
 </html>
